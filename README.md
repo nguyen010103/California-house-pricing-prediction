@@ -36,3 +36,48 @@ This project uses the California Census housing dataset to median home values ba
 ## Engineered dataset
 - Combine avg_rooms and avg_bedrooms because both of them had a high correlation to each other. Using both will be redundant.
 - Drop the column due to low or near zero correlation with the house median price: populations, avg_bedrooms and avg_rooms
+
+---
+
+## Machine Learning - Model 
+
+### Models Evaluated
+
+| Model               | RMSE | MAE  | R²     |
+|--------------------|------|------|--------|
+| Linear Regression   | 0.74 | 0.54 | 0.582  |
+| Decision Tree       | 0.74 | 0.54 | 0.583  |
+| **Random Forest**  | **0.51** | **0.31** | **0.803** |
+
+> **Random Forest** achieved the best performance and is selected as the final model.
+
+---
+
+## 📊 Visualizations
+
+- Residual plots and actual vs. predicted plots
+- Feature importances
+- Model performance comparison bar chart
+
+---
+
+## 🛠️ Tech Stack
+
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- Scikit-learn for modeling
+- Jupyter Notebook for analysis
+
+---
+
+## 🚀 Next Steps
+
+- Try XGBoost or LightGBM for further improvements
+- Add geographic features (e.g., proximity to coast or cities)
+- Build a Streamlit or Dash app to serve predictions interactively
+
+---
+
+## ✍️ Author
+
+Nguyen Do  
+[GitHub Profile](https://github.com/nguyen010103)  
