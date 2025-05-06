@@ -42,7 +42,6 @@ This project uses the California Census housing dataset to median home values ba
 ## Machine Learning - Model 
 
 ### Models Evaluated
-
 | Model               | RMSE | MAE  | R²     |
 |--------------------|------|------|--------|
 | Linear Regression   | 0.74 | 0.54 | 0.582  |
@@ -51,17 +50,17 @@ This project uses the California Census housing dataset to median home values ba
 
 > **Random Forest** achieved the best performance and is selected as the final model.
 
----
-
-## 📊 Visualizations
-
+## Visualizations
 - Residual plots and actual vs. predicted plots
 - Feature importances
 - Model performance comparison bar chart
 
+## Feature Importance
+- Top driver: `median_income`, followed by location features (`latitude`, `longitude`) and household characteristics.
+
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python (Pandas, NumPy, Matplotlib, Seaborn)
 - Scikit-learn for modeling
@@ -69,15 +68,15 @@ This project uses the California Census housing dataset to median home values ba
 
 ---
 
-## 🚀 Next Steps
+## Conclusion
 
-- Try XGBoost or LightGBM for further improvements
-- Add geographic features (e.g., proximity to coast or cities)
-- Build a Streamlit or Dash app to serve predictions interactively
+- The model achieved strong predictive accuracy.
+- `Median income` is the most powerful predictor of home values.
+- Geographic and household density features also significantly influence housing prices.
 
 ---
 
-## ✍️ Author
+## Author
 
 Nguyen Do  
 [GitHub Profile](https://github.com/nguyen010103)  
